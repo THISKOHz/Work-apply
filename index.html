@@ -26,19 +26,32 @@
       h6,
       p,
       ul,
-      li {
+      li,
+      a {
         margin: 0;
+      }
+
+      a:hover {
+        font-weight: bold;
+        color: #8d70fe;
+      }
+
+      .imageprofile:hover {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
       }
 
       @font-face {
         font-family: "LINESeedSansTH";
-        src: url(https://thiskohz.github.io/Work-apply/Font/LINESeedSansTH_W_Rg.woff2) format("woff2");
+        src: url(https://thiskohz.github.io/Work-apply/Font/LINESeedSansTH_W_Rg.woff2)
+          format("woff2");
         font-weight: 400;
       }
 
       @font-face {
         font-family: "LINESeedSansTH";
-        src: url(https://thiskohz.github.io/Work-apply/Font/LINESeedSansTH_W_Bd.woff2) format("woff2");
+        src: url(https://thiskohz.github.io/Work-apply/Font/LINESeedSansTH_W_Bd.woff2)
+          format("woff2");
         font-weight: 700;
       }
       .head_work {
@@ -63,14 +76,14 @@
         border-radius: 16px;
         background: #fff;
       }
-      .imglogo{
+      /* .imglogo {
         width: 16%;
         height: auto;
-      }
+      } */
     </style>
   </head>
   <body>
-    <div style="display: flex; gap: 24px; padding: 40px;">
+    <div style="display: flex; gap: 24px; padding: 40px">
       <!--  column ที่ 1 -->
       <div
         style="
@@ -83,24 +96,33 @@
           gap: 24px;
         "
       >
-        <div style="width: 100%; display: flex; justify-content: center">
+        <div
+          style="
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+          "
+        >
           <img
+            class="imageprofile"
             src="https://thiskohz.github.io/Work-apply/Image/me.JPEG"
             alt="photo Resume"
             style="
-              max-width: 250px;
+              max-width: 200px;
               width: 100%;
               height: auto;
               border-radius: 50%;
-              border: 5px solid #8d70fe;
+              border: 8px solid #8d70fe;
             "
           />
         </div>
-        <h2 style="text-align: center">KRITTIN CHAIMAIMOD (KOH)</h2>
+        <h2 style="text-align: center">KRITTIN CHAIMAIMOD <br />(KOH)</h2>
         <div style="width: 100%; display: flex; justify-content: center">
           <h3
             style="
-              width: 160px;
+              width: 100%;
+              max-width: 96px;
               display: flex;
               padding: 8px 48px;
               justify-content: center;
@@ -114,18 +136,17 @@
           </h3>
         </div>
         <p style="text-align: center">
-          If you equip me with the right tools and a strong <br />
-          team, together, we will create extraordinary things.
+          If you equip me with the right tools and a strong team, together, we
+          will create extraordinary things.
         </p>
-
-        <div style="width: 100%; gap: 8px">
-          <h2>PERSONAL</h2>
-          <div style="display: flex; align-items: center; gap: 16px">
+        <div style="width: 100%">
+          <h2 style="padding-bottom: 8px">PERSONAL</h2>
+          <div style="display: flex; align-items: center; gap: 8px">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
-              viewBox="0 0 24 24"
+              viewbox="0 0 24 24"
               fill="none"
             >
               <path
@@ -135,7 +156,7 @@
             </svg>
             <p style="margin: 4px">Male</p>
           </div>
-          <div style="display: flex; align-items: center; gap: 16px">
+          <div style="display: flex; align-items: center; gap: 8px">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -152,14 +173,14 @@
           </div>
         </div>
 
-        <div style="width: 100%; gap: 8px">
-          <h2>CONTACTS</h2>
-          <div style="display: flex; align-items: center; gap: 16px">
+        <div style="width: 100%">
+          <h2 style="padding-bottom: 8px">CONTACTS</h2>
+          <div style="display: flex; align-items: center; gap: 8px">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
-              viewBox="0 0 25 25"
+              viewBox="0 0 24 24"
               fill="none"
             >
               <path
@@ -169,7 +190,7 @@
             </svg>
             <p style="margin: 4px">084 - 173 -8886</p>
           </div>
-          <div style="display: flex; align-items: center; gap: 16px">
+          <div style="display: flex; align-items: center; gap: 8px">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -187,9 +208,9 @@
         </div>
 
         <div style="width: 100%">
-          <h2>Bio</h2>
+          <h2 style="padding-bottom: 8px">Bio</h2>
           <p>
-            My name is Krittin Chaimaimod. I graduated with a Bachelor's degree
+            My name is "Krittin Chaimaimod" I graduated with a Bachelor's degree
             in Faculty of Fine Arts in 2018 from Bunditpatanasilpa Institute. I
             have always had a great work ethic and a strong dedication to
             improve myself. On top of this, my capability to work well with a
@@ -199,14 +220,14 @@
           </p>
         </div>
         <div style="width: 100%">
-          <h2>Experience</h2>
-          <p>"8 years of experience in UX/UI design."</p>
+          <h2 style="padding-bottom: 8px">Experience</h2>
+          <p>"9 years of experience in UX/UI design."</p>
         </div>
       </div>
       <!--  column ที่ 2 -->
       <div
         style="
-          width:52%;
+          width: 48%;
           padding: 24px;
           border-radius: 16px;
           background: #fff;
@@ -230,14 +251,15 @@
           </svg>
           <h2>Work Experience</h2>
         </div>
-
-        <div class="head_work">
-          <h3>INNONITY Co.,Ltd.</h3>
-          <h4>2023 - Present</h4>
-        </div>
-        <div class="sub_work">
-          <p>In Chiangmai</p>
-          <h4 style="color: #8d70fe">UX/UI Design</h4>
+        <div>
+          <div class="head_work">
+            <h3>INNONITY Co.,Ltd.</h3>
+            <h4>2023 - Present</h4>
+          </div>
+          <div class="sub_work">
+            <p>In Chiangmai</p>
+            <h4 style="color: #8d70fe">UX/UI Design & Product Owner</h4>
+          </div>
         </div>
         <div>
           <ul>
@@ -265,14 +287,15 @@
             </li>
           </ul>
         </div>
-
-        <div class="head_work">
-          <h3>Dudee - Indeed Co.,Ltd.</h3>
-          <p>2022 - 2023</p>
-        </div>
-        <div class="sub_work">
-          <p>In Chiangmai</p>
-          <h4 style="color: #8d70fe">Team Lead UX/UI Designer Manager</h4>
+        <div>
+          <div class="head_work">
+            <h3>Dudee - Indeed Co.,Ltd.</h3>
+            <p>2022 - 2023</p>
+          </div>
+          <div class="sub_work">
+            <p>In Chiangmai</p>
+            <h4 style="color: #8d70fe">Team Lead UX/UI Designer Manager</h4>
+          </div>
         </div>
         <div>
           <ul>
@@ -295,14 +318,15 @@
             </li>
           </ul>
         </div>
-
-        <div class="head_work">
-          <h3>Foiros Co.,Ltd.</h3>
-          <p>2021 - 2022</p>
-        </div>
-        <div class="sub_work">
-          <p>In Bangkok and Chiangmai</p>
-          <h4 style="color: #8d70fe">Team Lead UX/UI Designer</h4>
+        <div>
+          <div class="head_work">
+            <h3>Foiros Co.,Ltd.</h3>
+            <p>2021 - 2022</p>
+          </div>
+          <div class="sub_work">
+            <p>In Bangkok and Chiangmai</p>
+            <h4 style="color: #8d70fe">Team Lead UX/UI Designer</h4>
+          </div>
         </div>
         <div>
           <ul>
@@ -328,14 +352,15 @@
             </li>
           </ul>
         </div>
-
-        <div class="head_work">
-          <h3>Foiros Co.,Ltd.</h3>
-          <p>2020</p>
-        </div>
-        <div class="sub_work">
-          <p>In Bangkok and Chiangmai</p>
-          <h4 style="color: #8d70fe">Senior & Junior UX/UI Design</h4>
+        <div>
+          <div class="head_work">
+            <h3>Foiros Co.,Ltd.</h3>
+            <p>2020</p>
+          </div>
+          <div class="sub_work">
+            <p>In Bangkok and Chiangmai</p>
+            <h4 style="color: #8d70fe">Senior & Junior UX/UI Design</h4>
+          </div>
         </div>
         <div>
           <ul>
@@ -347,14 +372,15 @@
             <li>Built accessible, user-focused design docs to align teams.</li>
           </ul>
         </div>
-
-        <div class="head_work">
-          <h3>Punruk Global Life Co.,Ltd.</h3>
-          <p>2018 - 2020</p>
-        </div>
-        <div class="sub_work">
-          <p>In Bangkok and Chiangmai</p>
-          <h4 style="color: #8d70fe">Junior UX/UI & Intern UI Design</h4>
+        <div>
+          <div class="head_work">
+            <h3>Punruk Global Life Co.,Ltd.</h3>
+            <p>2018 - 2020</p>
+          </div>
+          <div class="sub_work">
+            <p>In Bangkok and Chiangmai</p>
+            <h4 style="color: #8d70fe">Junior UX/UI & Intern UI Design</h4>
+          </div>
         </div>
         <div>
           <ul>
@@ -370,7 +396,7 @@
         </div>
       </div>
       <!-- column ที่ 3  -->
-      <div style="width: 24%; display: flex; flex-direction: column; gap: 24px">
+      <div style="width: 28%; display: flex; flex-direction: column; gap: 24px">
         <div class="block_column">
           <!-- Certificate -->
           <div style="display: flex; align-items: center; gap: 8px">
@@ -395,8 +421,17 @@
               <p>2022</p>
             </div>
             <div style="display: flex; justify-content: space-between">
-              <p style="font-size: 14px;">UX Design Professional Certificate</p>
-              <p style="color: #8d70fe; font-weight: bold; font-size: 14px; text-align: end;">7 Certificate</p>
+              <p style="font-size: 14px">UX Design Professional Certificate</p>
+              <p
+                style="
+                  color: #8d70fe;
+                  font-weight: bold;
+                  font-size: 14px;
+                  text-align: end;
+                "
+              >
+                7 Certificate
+              </p>
             </div>
           </div>
 
@@ -406,8 +441,10 @@
               <p>2022</p>
             </div>
             <div style="display: flex; justify-content: space-between">
-              <p style="font-size: 14px;">UX Writing</p>
-              <p style="color: #8d70fe; font-weight: bold; font-size: 14px;">Certificate</p>
+              <p style="font-size: 14px">UX Writing</p>
+              <p style="color: #8d70fe; font-weight: bold; font-size: 14px">
+                Certificate
+              </p>
             </div>
           </div>
 
@@ -417,8 +454,10 @@
               <p>2022</p>
             </div>
             <div style="display: flex; justify-content: space-between">
-              <p style="font-size: 14px;">UX / UI Design with Adobe XD</p>
-              <p style="color: #8d70fe; font-weight: bold; font-size: 14px;">Certificate</p>
+              <p style="font-size: 14px">UX / UI Design with Adobe XD</p>
+              <p style="color: #8d70fe; font-weight: bold; font-size: 14px">
+                Certificate
+              </p>
             </div>
           </div>
 
@@ -428,8 +467,10 @@
               <p>2022</p>
             </div>
             <div style="display: flex; justify-content: space-between">
-              <p style="font-size: 14px;">UX/UI Design with Figma</p>
-              <p style="color: #8d70fe; font-weight: bold; font-size: 14px;">Certificate</p>
+              <p style="font-size: 14px">UX/UI Design with Figma</p>
+              <p style="color: #8d70fe; font-weight: bold; font-size: 14px">
+                Certificate
+              </p>
             </div>
           </div>
 
@@ -439,8 +480,10 @@
               <p>2017</p>
             </div>
             <div style="display: flex; justify-content: space-between">
-              <p style="font-size: 14px;">Intro to User Experience Design</p>
-              <p style="color: #8d70fe; font-weight: bold; font-size: 14px;">Certificate</p>
+              <p style="font-size: 14px">Intro to User Experience Design</p>
+              <p style="color: #8d70fe; font-weight: bold; font-size: 14px">
+                Certificate
+              </p>
             </div>
           </div>
         </div>
@@ -469,18 +512,28 @@
           <div>
             <div style="display: flex; justify-content: space-between">
               <h4>Bachelor's degree</h4>
-              <p style="font-size: 14px;">2014 - 2018</p>
+              <p style="font-size: 14px">2014 - 2018</p>
             </div>
             <div style="display: flex; justify-content: space-between">
-              <p style="font-size: 14px;">Faculty of Fine Arts / Printmaking</p>
-              <p style="color: #8d70fe; font-weight: bold; font-size: 14px;">3.48 GPAX</p>
+              <p style="font-size: 14px">Faculty of Fine Arts / Printmaking</p>
+              <p style="color: #8d70fe; font-weight: bold; font-size: 14px">
+                3.48 GPAX
+              </p>
+            </div>
+            <div style="display: flex; justify-content: space-between">
+              <a
+                href="https://www.bpi.ac.th/"
+                target="_blank"
+                style="font-size: 14px"
+                >(Bunditpatanasilpa Institute)</a
+              >
             </div>
           </div>
         </div>
 
         <div class="block_column">
           <!-- Exhibition -->
-          <div style="display: flex; align-items: center; gap:8px">
+          <div style="display: flex; align-items: center; gap: 8px">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -499,30 +552,30 @@
           <div>
             <div style="display: flex; justify-content: space-between">
               <h4>Looking Exhibition</h4>
-              <p style="font-size: 14px;">2014 - 2018</p>
+              <p style="font-size: 14px">2014 - 2018</p>
             </div>
             <div style="display: flex; justify-content: space-between">
-              <p style="font-size: 14px;">In Bangkok</p>
+              <p style="font-size: 14px">In Bangkok</p>
             </div>
           </div>
 
           <div>
             <div style="display: flex; justify-content: space-between">
               <h4>Zane Gallery & INTANU</h4>
-              <p style="font-size: 14px;">2019 - 2021</p>
+              <p style="font-size: 14px">2019 - 2021</p>
             </div>
             <div style="display: flex; justify-content: space-between">
-              <p style="font-size: 14px;">In Chiangmai</p>
+              <p style="font-size: 14px">In Chiangmai</p>
             </div>
           </div>
 
           <div>
             <div style="display: flex; justify-content: space-between">
               <h4>Time: It’s time to relax</h4>
-              <p style="font-size: 14px;">2021 - 2022</p>
+              <p style="font-size: 14px">2021 - 2022</p>
             </div>
             <div style="display: flex; justify-content: space-between">
-              <p style="font-size: 14px;">In Chiangmai</p>
+              <p style="font-size: 14px">In Chiangmai</p>
             </div>
           </div>
         </div>
@@ -554,8 +607,12 @@
           </div>
 
           <div style="display: inline-flex; gap: 8px">
-            <img src="https://thiskohz.github.io/Work-apply/Image/all_program.png" alt="program" style="width: 100%; height: auto;">
-           <!--  <div>
+            <img
+              src="https://thiskohz.github.io/Work-apply/Image/all_program.png"
+              alt="program"
+              style="width: 100%; height: auto"
+            />
+            <!--  <div>
               <img src="/Image/figma.png" alt="figma logo" style="width: 100%; height: auto;" />
             </div>
             <div
